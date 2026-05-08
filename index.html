@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jennifer | Data & Analytics Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #151a2c;
+      --accent: #ffb347;
+      --text-main: #f5f5f7;
+      --text-muted: #a0a4b8;
+      --pill: #22263a;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-main);
+      background: radial-gradient(circle at top, #1b2340 0, #050814 55%, #02030a 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    header {
+      padding: 24px 0 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      margin-bottom: 32px;
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 540px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .pill {
+      background: var(--pill);
+      color: var(--text-muted);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 0.8rem;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr);
+      gap: 24px;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .project {
+      padding: 12px 12px;
+      border-radius: 12px;
+      transition: background 0.15s ease, transform 0.15s ease;
+      cursor: default;
+    }
+
+    .project:hover {
+      background: rgba(255,255,255,0.03);
+      transform: translateY(-1px);
+    }
+
+    .project-title-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: baseline;
+    }
+
+    .project-title {
+      font-weight: 600;
+    }
+
+    .project-tag {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .project-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .project-links {
+      margin-top: 6px;
+      font-size: 0.8rem;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    ul li + li {
+      margin-top: 4px;
+    }
+
+    .contact-links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="tagline">Data & Analytics Portfolio</div>
+      <h1>Jennifer [Last Name]</h1>
+      <p class="subtitle">
+        Analytics & BI leader with a focus on causal methods, experimental design, and turning messy data into clear, decision-ready stories.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Business Intelligence</span>
+        <span class="pill">Analytics Strategy</span>
+        <span class="pill">Causal Inference</span>
+        <span class="pill">Experimentation</span>
+        <span class="pill">Data Storytelling</span>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section>
+          <h2>Featured projects</h2>
+          <div class="card projects-list">
+            <div class="project">
+              <div class="project-title-row">
+                <div class="project-title">Aloha Bowl: Customer & Revenue Analytics</div>
+                <div class="project-tag">BI · Cohort analysis · Pricing</div>
+              </div>
+              <p class="project-desc">
+                Built an end-to-end analytics review for a restaurant concept, combining cohort behavior, channel performance, and pricing insights into clear recommendations for growth.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank">View case study</a>
+                <a href="#" target="_blank">View code / notebook</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-title-row">
+                <div class="project-title">Experimentation Framework for Product Changes</div>
+                <div class="project-tag">Causal methods · Uplift · Experiment design</div>
+              </div>
+              <p class="project-desc">
+                Designed a lightweight experimentation framework to evaluate product changes, focusing on uplift, guardrail metrics, and clear communication to stakeholders.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank">View case study</a>
+                <a href="#" target="_blank">View code / dashboard</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-title-row">
+                <div class="project-title">Executive BI Dashboard for Medical Affairs</div>
+                <div class="project-tag">Power BI / Tableau · Stakeholder alignment</div>
+              </div>
+              <p class="project-desc">
+                Created an executive-facing BI dashboard surfacing field performance, engagement, and impact metrics, with a focus on clarity and narrative flow.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank">View case study</a>
+                <a href="#" target="_blank">View mockups / dashboard</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>About</h2>
+          <div class="card">
+            <p style="font-size:0.9rem; color:var(--text-muted);">
+              I’m a data & analytics professional with experience in BI, experimentation, and analytics program leadership.
+              I care about building analytics that people actually use: clear, decision-focused, and grounded in real customer behavior.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h2>Skills & tools</h2>
+          <div class="card">
+            <ul>
+              <li><strong>Analytics & Methods:</strong> Experiment design, causal inference, cohort analysis, funnel analysis</li>
+              <li><strong>BI & Visualization:</strong> Power BI, Tableau, Looker (or tools you use)</li>
+              <li><strong>Data:</strong> SQL, Python (pandas), Excel, data modeling</li>
+              <li><strong>Product & PM:</strong> Stakeholder alignment, roadmap definition, KPI design, storytelling</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <div class="card contact-links">
+            <ul>
+              <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+              <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+              <li>LinkedIn: <a href="#" target="_blank">LinkedIn profile</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Jennifer [Last Name] · Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
