@@ -30,7 +30,7 @@ Developed a real-time certification tracking BI tool that reduced time-to-certif
 
 ---
 ### 📄 Résumé
-Portfolio-safe version: https://drive.google.com/file/d/1GZdCy0fLjNoBl00WOT2RBqZUsAUrLpwD/view
+https://drive.google.com/file/d/1GZdCy0fLjNoBl00WOT2RBqZUsAUrLpwD/view
 
 ---
 ### 📫 Contact
