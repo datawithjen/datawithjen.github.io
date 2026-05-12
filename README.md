@@ -29,7 +29,10 @@ Architected a unified data warehouse integrating Workday, Cornerstone, Degreed, 
 Developed a real-time certification tracking BI tool that reduced time-to-certification from 14 weeks to 2 weeks.
 
 ---
+### 📄 Résumé
+Portfolio-safe version: https://drive.google.com/file/d/1GZdCy0fLjNoBl00WOT2RBqZUsAUrLpwD/view
 
+---
 ### 📫 Contact
 - **Email:** jenniferrn.tran@gmail.com  
 - **LinkedIn:** https://www.linkedin.com/in/jenntran1/
